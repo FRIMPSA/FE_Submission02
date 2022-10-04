@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.toggle-button-wrapper {
+  max-width: 80px;
+  width: 100%;
+  
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-button-wrapper input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-wrapper {
+  width: 60px;
+  border: 1px solid hsl(0, 0%, 75%);
+  background-color: hsl(0, 0%, 90%);
+  box-shadow: 0 2px 5px rgba(178, 176, 176, 0.2);
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.toggle {
+  width: 30px;
+  height: 30px;
+  border: 1px solid hsl(0, 0%, 65%);
+  background-color: hsl(0, 0%, 75%);
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 50%);
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  transition: left 0.25s;
+}
+
+input[type="checkbox"]:checked + .toggle-wrapper > .toggle {
+  left: calc(100% - 30px);
+}
+
+body.dark {
+  background-color: rgb(45, 121, 35);
+  color: white;
+}
+
+body.dark .toggle-button-wrapper {
+  border: 1px solid hsl(0, 0%, 25%);
+}
+
+body.dark .toggle-wrapper {
+  border: 1px solid hsl(0, 0%, 25%);
+  background-color: hsl(0, 0%, 10%);
+  box-shadow: 0 2px 5px hsla(0, 0%, 100%, 20%);
+}
+
+/* body.dark .toggle {
+  border: 1px solid hsl(0, 0%, 35%);
+  background-color: hsl(0, 0%, 25%);
+  box-shadow: 0 2px 5px hsla(0, 0%, 100%, 50%);
+} */
