@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Title 
 Implement an analytics dashboard using JavaScript and no framework.
 
@@ -31,3 +32,7 @@ below the graph is a table fetching 'bestsellers' data in to the table.
 
 #Orders
 The order page shows a table of data from the API which shows paginaton and a search or filter functionality. the table can be sorted in both ascending and descending order. Data in the table can be filtered by name or status. The table can display 10 rows at a time but can also display 20 or 30 rows as well.
+=======
+# FE_Submission02
+Freddy's halloween shop
+>>>>>>> ba43accc8c2aa7c57d8a42fd4c773bc0c1d6ad95
